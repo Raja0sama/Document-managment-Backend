@@ -16,8 +16,6 @@ app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true, parameterLimit: 1000000}));
 app.set('view engine', 'ejs')
 
-app.use('/',index)
-app.use('/Attendence',Attendence)
 app.use('/Document',Docs)
 
 // Add headers
